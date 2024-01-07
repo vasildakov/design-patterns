@@ -16,7 +16,7 @@
         "php-coveralls/php-coveralls": "dev-master",
         "phpmd/phpmd": "dev-master",
         "phpunit/phpunit": "^9.5",
-        "psalm/plugin-phpunit": "dev-master",
+        "psalm/plugin-phpunit": "^0.18.4",
         "squizlabs/php_codesniffer": "4.0.x-dev",
         "symfony/var-dumper": "^7.0",
         "theseer/phpdox": "dev-master",

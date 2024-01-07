@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c7de04db2515eaa62599462c5784b0a9",
+    "content-hash": "4b329baf49bb3f228c670dc3cc0c1903",
     "packages": [],
     "packages-dev": [
         {
@@ -2336,16 +2336,16 @@
         },
         {
             "name": "psalm/plugin-phpunit",
-            "version": "dev-master",
+            "version": "0.18.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/psalm/psalm-plugin-phpunit.git",
-                "reference": "ad948801b278091709304d4f01c37a21d073b2da"
+                "reference": "e4ab3096653d9eb6f6d0ea5f4461898d59ae4dbc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/psalm/psalm-plugin-phpunit/zipball/ad948801b278091709304d4f01c37a21d073b2da",
-                "reference": "ad948801b278091709304d4f01c37a21d073b2da",
+                "url": "https://api.github.com/repos/psalm/psalm-plugin-phpunit/zipball/e4ab3096653d9eb6f6d0ea5f4461898d59ae4dbc",
+                "reference": "e4ab3096653d9eb6f6d0ea5f4461898d59ae4dbc",
                 "shasum": ""
             },
             "require": {
@@ -2366,7 +2366,6 @@
                 "weirdan/codeception-psalm-module": "^0.11.0",
                 "weirdan/prophecy-shim": "^1.0 || ^2.0"
             },
-            "default-branch": true,
             "type": "psalm-plugin",
             "extra": {
                 "psalm": {
@@ -2391,9 +2390,9 @@
             "description": "Psalm plugin for PHPUnit",
             "support": {
                 "issues": "https://github.com/psalm/psalm-plugin-phpunit/issues",
-                "source": "https://github.com/psalm/psalm-plugin-phpunit/tree/master"
+                "source": "https://github.com/psalm/psalm-plugin-phpunit/tree/0.18.4"
             },
-            "time": "2023-03-05T04:05:37+00:00"
+            "time": "2022-12-03T07:47:07+00:00"
         },
         {
             "name": "psr/container",
@@ -5897,7 +5896,6 @@
         "friendsofphp/php-cs-fixer": 20,
         "php-coveralls/php-coveralls": 20,
         "phpmd/phpmd": 20,
-        "psalm/plugin-phpunit": 20,
         "squizlabs/php_codesniffer": 20,
         "theseer/phpdox": 20,
         "vimeo/psalm": 20
