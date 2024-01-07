@@ -20,11 +20,7 @@ final class PaymentController
      */
     public function paymentAction(PaymentRequest $request): string
     {
-        $gateway = match($request->gateway) {
-            'PayPal' => new PayPalGateway(),
-            'Stripe' => new StripeGateway(),
-            default  => throw new RuntimeException('Unsupported Payment Gateway'),
-        };
+        $gateway = PaymentGatewayFactory::create($request->gateway);
 
         $this->service->setGateway($gateway);
 
