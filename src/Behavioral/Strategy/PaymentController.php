@@ -7,7 +7,7 @@ namespace VasilDakov\DesignPatterns\Behavioral\Strategy;
 use RuntimeException;
 
 /**
- * The Context (PaymentService) consumer
+ * The Context Consumer
  */
 final class PaymentController
 {
@@ -22,8 +22,10 @@ final class PaymentController
     {
         $gateway = PaymentGatewayFactory::create($request->gateway);
 
+        // Change the strategy dynamically at runtime
         $this->service->setGateway($gateway);
 
+        // Execute the new strategy
         return $this->service->process(new Payment($request->amount));
     }
 }

@@ -4,7 +4,7 @@ namespace VasilDakov\DesignPatterns\Behavioral\Strategy;
 
 use RuntimeException;
 
-class PaymentGatewayFactory
+final class PaymentGatewayFactory
 {
     /**
      * @param string $name
