@@ -1,0 +1,10 @@
+<?php
+
+namespace VasilDakov\DesignPatterns\Creational\AbstractFactory\Repository;
+
+class Repository
+{
+    public function __construct(private readonly EntityManager $em)
+    {
+    }
+}

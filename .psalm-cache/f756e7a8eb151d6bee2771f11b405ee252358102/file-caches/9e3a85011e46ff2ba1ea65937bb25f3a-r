@@ -1,0 +1,8 @@
+<?php
+
+namespace VasilDakov\DesignPatternsTests\Crea\Strategy;
+
+class AbstractRepositoryFactoryTest extends \PHPUnit\Framework\TestCase
+{
+
+}

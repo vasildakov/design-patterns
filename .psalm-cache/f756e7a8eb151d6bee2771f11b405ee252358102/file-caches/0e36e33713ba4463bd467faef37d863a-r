@@ -1,0 +1,10 @@
+<?php
+
+namespace VasilDakov\DesignPatternsTests\Creational\AbstractFactory;
+
+use PHPUnit\Framework\TestCase;
+
+class AbstractRepositoryFactoryTest extends TestCase
+{
+    public function testItCanCreateWithName() {}
+}

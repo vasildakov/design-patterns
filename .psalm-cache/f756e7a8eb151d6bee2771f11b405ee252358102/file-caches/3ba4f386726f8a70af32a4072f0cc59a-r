@@ -1,0 +1,17 @@
+<?php
+
+namespace VasilDakov\DesignPatternsTests\Creational\AbstractFactory;
+
+use PHPUnit\Framework\TestCase;
+use VasilDakov\DesignPatterns\Creational\AbstractFactory\AbstractRepositoryFactory;
+use VasilDakov\DesignPatterns\Creational\AbstractFactory\Repository\UserRepository;
+
+class AbstractRepositoryFactoryTest extends TestCase
+{
+    public function testItCanCreateWithName() 
+    {
+        $factory = new AbstractRepositoryFactory();
+        
+        $instance = $factory->create(UserRepository::class);
+    }
+}

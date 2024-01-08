@@ -1,0 +1,25 @@
+<?php
+
+namespace VasilDakov\DesignPatterns\Creational\AbstractFactory;
+
+use VasilDakov\DesignPatterns\Creational\AbstractFactory\Repository\EntityManager;
+use VasilDakov\DesignPatterns\Creational\AbstractFactory\Repository\Repository;
+use VasilDakov\DesignPatterns\Creational\AbstractFactory\Repository\RepositoryInterface;
+
+class AbstractRepositoryFactory
+{
+
+    public function create(string $name): RepositoryInterface
+    {
+        return new $name(new EntityManager());
+    }
+
+
+    private function canCreate(string $name): bool
+    {
+        if (!class_exists($name) || !class_implements(Repository::class)) {
+            return false;
+        }
+        return true;
+    }
+}

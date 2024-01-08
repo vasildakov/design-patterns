@@ -1,0 +1,29 @@
+<?php
+
+namespace VasilDakov\DesignPatterns\Creational\AbstractFactory;
+
+use RuntimeException;
+use VasilDakov\DesignPatterns\Creational\AbstractFactory\Repository\EntityManager;
+use VasilDakov\DesignPatterns\Creational\AbstractFactory\Repository\RepositoryInterface;
+
+class AbstractRepositoryFactory
+{
+
+    public function create(string $className): RepositoryInterface
+    {
+        if (!$this->canCreate($className)) {
+            throw new RuntimeException;
+        }
+
+        return new $name(new EntityManager());
+    }
+
+
+    private function canCreate(string $name): bool
+    {
+        if (!class_exists($name) || !class_implements(RepositoryInterface::class)) {
+            return false;
+        }
+        return true;
+    }
+}

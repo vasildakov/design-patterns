@@ -1,0 +1,11 @@
+<?php
+
+namespace VasilDakov\DesignPatterns\Creational\FactoryMethod;
+
+class UserFactory
+{
+    public function create(string $email, string $password): User
+    {
+        return new User($email, $password);
+    }
+}

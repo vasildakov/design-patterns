@@ -1,0 +1,13 @@
+<?php
+
+namespace VasilDakov\DesignPatterns\Creational\AbstractFactory;
+
+class AbstractRepositoryFactory
+{
+    
+    
+    public function canCreate(): bool
+    {
+        return true;
+    }
+}
