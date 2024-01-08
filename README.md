@@ -1,6 +1,8 @@
-# Design Patterns
+# PHP Design Patterns
 
-PHP Design Patterns
+[![Build](https://github.com/vasildakov/design-patterns/actions/workflows/php.yml/badge.svg)](https://github.com/vasildakov/design-patterns/actions/workflows/php.yml)
+
+Documentation
 
 [1]: https://kongulov.dev/blog/enhance-your-php-code-with-decorator-design-pattern
 [2]: https://kongulov.dev/blog/mastering-the-strategy-design-pattern-in-php
