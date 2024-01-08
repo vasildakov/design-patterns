@@ -725,12 +725,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHP-CS-Fixer/PHP-CS-Fixer.git",
-                "reference": "3a531ba3772891d4351018f310e55a956c0b4651"
+                "reference": "3566e7c926ada331cd07cf6436947d0d89a1d216"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PHP-CS-Fixer/PHP-CS-Fixer/zipball/3a531ba3772891d4351018f310e55a956c0b4651",
-                "reference": "3a531ba3772891d4351018f310e55a956c0b4651",
+                "url": "https://api.github.com/repos/PHP-CS-Fixer/PHP-CS-Fixer/zipball/3566e7c926ada331cd07cf6436947d0d89a1d216",
+                "reference": "3566e7c926ada331cd07cf6436947d0d89a1d216",
                 "shasum": ""
             },
             "require": {
@@ -809,7 +809,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-01-06T11:23:12+00:00"
+            "time": "2024-01-07T17:06:10+00:00"
         },
         {
             "name": "guzzlehttp/guzzle",

@@ -1,11 +1,14 @@
 {
     "name": "vasildakov/design-patterns",
+    "description": "PHP Design Patterns",
+    "homepage": "https://github.com/vasildakov/design-patterns",
     "authors": [
         {
             "name": "Vasil Dakov",
             "email": "vasildakov@gmail.com"
         }
     ],
+    "license": "MIT",
     "prefer-stable": true,
     "minimum-stability": "dev",
     "require": {
