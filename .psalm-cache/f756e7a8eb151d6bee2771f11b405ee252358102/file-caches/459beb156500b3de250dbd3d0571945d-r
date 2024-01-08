@@ -1,6 +1,0 @@
-<?php
-
-class AbstractRepositoryFactoryTest extends \PHPUnit\Framework\TestCase
-{
-
-}

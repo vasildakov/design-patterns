@@ -1,8 +1,0 @@
-<?php
-
-namespace VasilDakov\DesignPatternsTests\Creational\AbstractFactory;
-
-class AbstractRepositoryFactoryTest extends TestCase
-{
-
-}

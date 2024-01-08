@@ -1,8 +1,0 @@
-<?php
-
-namespace VasilDakov\DesignPatternsTests\Creat\Strategy;
-
-class AbstractRepositoryFactoryTest extends \PHPUnit\Framework\TestCase
-{
-
-}

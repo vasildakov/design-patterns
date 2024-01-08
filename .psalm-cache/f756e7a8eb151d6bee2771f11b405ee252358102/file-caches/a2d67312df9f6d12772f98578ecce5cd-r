@@ -1,8 +1,0 @@
-<?php
-
-namespace VasilDakov\DesignPatterns\Creational\FactoryMethod;
-
-class UserFactory
-{
-    public function create() {}
-}
