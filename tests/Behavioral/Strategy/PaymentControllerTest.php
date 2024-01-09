@@ -20,17 +20,17 @@ class PaymentControllerTest extends TestCase
     {
         $controller = new PaymentController(new PaymentService());
 
-        $str = $controller->paymentAction(new PaymentRequest('Stripe', 20.00));
+        $result = $controller->paymentAction(new PaymentRequest('Stripe', 20.00));
 
-        self::assertStringContainsString('Process payment using Stripe gateway', $str);
+        self::assertStringContainsString('Process payment using Stripe gateway', $result->message);
     }
 
     public function testItCanSwitchToPayPalPaymentGateway(): void
     {
         $controller = new PaymentController(new PaymentService());
 
-        $str = $controller->paymentAction(new PaymentRequest('PayPal', 20.00));
+        $result = $controller->paymentAction(new PaymentRequest('PayPal', 20.00));
 
-        self::assertStringContainsString('Process payment using PayPal gateway', $str);
+        self::assertStringContainsString('Process payment using PayPal gateway', $result->message);
     }
 }

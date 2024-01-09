@@ -20,7 +20,11 @@ final class PaymentService
         $this->gateway = $gateway;
     }
 
-    public function process(Payment $payment)
+    /**
+     * @param Payment $payment
+     * @return PaymentResult
+     */
+    public function process(Payment $payment): PaymentResult
     {
         if (null === $this->gateway) {
             throw new InvalidArgumentException("No payment gateway set.");

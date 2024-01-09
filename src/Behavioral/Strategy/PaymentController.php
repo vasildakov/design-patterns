@@ -18,7 +18,7 @@ final class PaymentController
     /**
      * @throws RuntimeException
      */
-    public function paymentAction(PaymentRequest $request): string
+    public function paymentAction(PaymentRequest $request): PaymentResult
     {
         $gateway = PaymentGatewayFactory::create($request->gateway);
 

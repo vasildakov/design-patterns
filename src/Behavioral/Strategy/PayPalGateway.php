@@ -6,10 +6,10 @@ namespace VasilDakov\DesignPatterns\Behavioral\Strategy;
 
 final class PayPalGateway implements PaymentGateway
 {
-    public function process(Payment $payment): string
+    public function process(Payment $payment): PaymentResult
     {
         // Integration code for processing payment via PayPal gateway
-        return 'Process payment using PayPal gateway';
+        return new PaymentResult('Process payment using PayPal gateway');
 
         // Additional logic specific to PayPal gateway
     }

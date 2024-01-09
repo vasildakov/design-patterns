@@ -13,13 +13,19 @@ class AbstractRepositoryFactoryTest extends TestCase
 {
     public function testItCanCreateWithName(): void
     {
+        // Arrange
         $factory = new AbstractRepositoryFactory();
 
+        // Act
         $users = $factory->create(UserRepository::class);
         $products = $factory->create(ProductRepository::class);
 
+        // Assert
         self::assertInstanceOf(UserRepository::class, $users);
         self::assertInstanceOf(ProductRepository::class, $products);
+
+        self::assertInstanceOf(RepositoryInterface::class, $users);
+        self::assertInstanceOf(RepositoryInterface::class, $products);
     }
 
     public function testItWillThrowAnExceptionForNonExistingClass(): void
