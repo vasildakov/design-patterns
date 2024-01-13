@@ -14,6 +14,9 @@
         <testsuite name="Creational">
             <directory>./tests/Creational</directory>
         </testsuite>
+        <testsuite name="Structural">
+            <directory>./tests/Structural</directory>
+        </testsuite>
     </testsuites>
     <logging>
         <junit outputFile="./build/logs/junit.xml"/>
